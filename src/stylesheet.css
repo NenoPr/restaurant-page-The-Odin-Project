@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+
+#container {
+    display: grid; 
+    grid-template: auto 10fr / 1fr; 
+    justify-content: center; 
+    align-content: center; 
+}
+
+#header {
+    display: grid;
+    grid-area: 1 / 1 / 1 / 4;
+    grid-template: 1fr / auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    gap: 5rem;
+    height: 20vh;
+    border-bottom: 1rem solid rgb(255, 255, 255);
+}
+
+.header-items {
+    border-bottom: .1rem solid black;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.header-items:hover {
+    width: 120%;
+}
+
+#landing-page {
+    
+}
+
+#menu {
+    
+}
+
+#contact {
+
+}
+
+#content {
+    grid-area: 2 / 1 / 2 / 4;
+    display: grid;
+    justify-items: center;
+    background-color: rgba(179, 179, 179, 0.724);
+    position: relative;
+}
+
+img {
+    width: 40%;
+    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#home-description {
+    width: 55%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    border-bottom: .3rem solid black;
+    margin: 0;
+}
+
+#home-why {
+    width: 50%;
+    text-align: justify;
+    font-size: 2rem;
+    background-color: white;
+    padding: 5rem;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 0;
+}
+
+#big-restaurant-img {
+    width: 100%;
+}
+
+.home-menu-call {
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: .2rem .2rem black;
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.home-menu-background-chef {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.home-menu-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.home-menu-background-holder {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 48, 48, 0.238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#home-menu-background-holder-2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.home-menu-button {
+    border: .2rem solid rgb(44, 150, 255);;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.615);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 20%;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+#footer {
+    border-top: .1rem solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+ /* ---- MENU PAGE FROM HERE DOWN ---- */
+
+ .para {
+    font-size: 3rem;
+    border-bottom: .5rem solid black;
+ }
+
+ #menu-list {
+    list-style-type: none;
+    width: 50%;
+ }
+
+ li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2rem solid black;
+    margin: 2rem;
+    background-color: white;
+ }
+
+ li > p:first-child {
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 0;
+ }
+
+ li > p {
+    font-size: 2rem;
+    background-color: white;
+    border: .1rem solid black;
+    padding: 1rem;
+ }
+
+ li > img {
+    padding-bottom: 1rem;
+    width: 100%;
+ }
+
+ 
+ /* ---- LOCATION PAGE FROM HERE DOWN ---- */
+
+ #location-image {
+    padding-bottom: 3rem;
+ }
+
+  /* ---- CONTACT PAGE FROM HERE DOWN ---- */
+
+  p {
+    font-size: 2rem;
+  }
