@@ -13,7 +13,7 @@ import './stylesheet.css'
     let header = document.createElement("div")
     header.id = "header"
     container.appendChild(header)
-    header.style.cssText = "background-image: url(/dist/img/header_image.jpg); background-size:  cover; background-repeat: no-repeat; background-position: center;"
+    header.style.cssText = "background-image: url(./img/header_image.jpg); background-size:  cover; background-repeat: no-repeat; background-position: center;"
 
 
     let landingPage = document.createElement("div")

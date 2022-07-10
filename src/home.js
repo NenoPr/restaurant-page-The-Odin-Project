@@ -45,7 +45,7 @@ function createHomepage(content, currentPage) {
 
     background = document.createElement("div")
     background.classList.add("home-menu-background")
-    background.style.cssText = "background-image: url(/dist/img/header_img.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
+    background.style.cssText = "background-image: url(./img/header_img.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
     content.appendChild(background)
     let backgroundHolder = document.createElement("div")
     backgroundHolder.classList.add("home-menu-background-holder")
@@ -67,7 +67,7 @@ function createHomepage(content, currentPage) {
 
     background = document.createElement("div")
     background.classList.add("home-menu-background")
-    background.style.cssText = "background-image: url(/dist/img/header.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
+    background.style.cssText = "background-image: url(./img/header.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
     content.appendChild(background)
 
     backgroundHolder = document.createElement("div")
