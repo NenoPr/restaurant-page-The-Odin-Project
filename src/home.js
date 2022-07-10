@@ -11,18 +11,25 @@ function createHomepage(content, currentPage) {
 
     window.scrollTo(0, 0);
 
+    content.style.cssText = ""
+
     let description = document.createElement("p")
     description.id = "home-description"
     description.textContent = "We serve food. The good kind. Come. You will love it. Pinky swear!"
     content.appendChild(description)
 
+    let backdropBlur = document.createElement("div")
+    backdropBlur.id = "backdrop-blur"
+    backdropBlur.style.cssText = "background-image: url(./img/brick-wall.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
+    content.appendChild(backdropBlur)
+
     let backdrop = document.createElement("div")
     backdrop.id = "backdrop"
-    backdrop.style.cssText = "background-image: url(./img/brick-wall.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
+    // backdrop.style.cssText = "background-image: url(./img/brick-wall.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
     content.appendChild(backdrop)
 
     description = document.createElement("p")
-    description.id = "home-why"
+    description.classList.add("home-why")
     description.innerHTML = "The food here is so good the mothers hate it! Our food is so much better than theirs that their kids just want to eat our food! And not theirs! <b>They feel defeated!</b> And all our chefs are handsome to boot!"
     backdrop.appendChild(description)
 
@@ -33,7 +40,7 @@ function createHomepage(content, currentPage) {
     backdrop.appendChild(imageChild)
 
     description = document.createElement("p")
-    description.id = "home-why"
+    description.classList.add("home-why")
     description.innerHTML = "But don't worry if you are a mother! No no no, trust us, you wont have any problems because you know.. you are just on a whole new level compared to the other moms! You can rest easy haha. In fact, wanna work here?"
     backdrop.appendChild(description)
 
@@ -93,6 +100,18 @@ function createHomepage(content, currentPage) {
     footer.id = "footer"
     footer.textContent = "This Restaurant is brought to you by a Project assignment from The Odin Project"
     content.appendChild(footer)
+
+    let stickyImage = document.createElement("img")
+    stickyImage.id = "sticky-img"
+    stickyImage.src = "img/arrow-up.png"
+    stickyImage.alt = "art"
+    content.appendChild(stickyImage)
+
+    stickyImage.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+    })
+    
+
 
     // document.body.appendChild(container)
 }
