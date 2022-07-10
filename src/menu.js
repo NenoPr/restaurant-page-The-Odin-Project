@@ -8,6 +8,8 @@ function createMenu(content) {
 
     window.scrollTo(0, 0);
 
+    content.style.cssText = "background-image: url(./img/brick-wall.jpg);"
+
     let description = document.createElement("p")
     description.classList.add("para")
     description.textContent = "Our menu is so good  you wont believe it! Well believe IT!"

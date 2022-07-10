@@ -9,6 +9,8 @@ function createContact(content) {
 
     window.scrollTo(0, 0);
 
+    content.style.cssText = ""
+
     let description = document.createElement("p")
     description.classList.add("para")
     description.textContent = "Contact us! We would love to hear from you! Love you <3"

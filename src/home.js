@@ -16,25 +16,26 @@ function createHomepage(content, currentPage) {
     description.textContent = "We serve food. The good kind. Come. You will love it. Pinky swear!"
     content.appendChild(description)
 
+    let backdrop = document.createElement("div")
+    backdrop.id = "backdrop"
+    backdrop.style.cssText = "background-image: url(./img/brick-wall.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
+    content.appendChild(backdrop)
+
     description = document.createElement("p")
     description.id = "home-why"
     description.innerHTML = "The food here is so good the mothers hate it! Our food is so much better than theirs that their kids just want to eat our food! And not theirs! <b>They feel defeated!</b> And all our chefs are handsome to boot!"
-    content.appendChild(description)
-
-    let background = document.createElement("div")
-    background.classList.add("home-menu-background-chef")
-    content.appendChild(background)
+    backdrop.appendChild(description)
 
 
     let imageChild = document.createElement("img")
     imageChild.src = "img/happy-chef.jpg"
     imageChild.alt = "art"
-    background.appendChild(imageChild)
+    backdrop.appendChild(imageChild)
 
     description = document.createElement("p")
     description.id = "home-why"
     description.innerHTML = "But don't worry if you are a mother! No no no, trust us, you wont have any problems because you know.. you are just on a whole new level compared to the other moms! You can rest easy haha. In fact, wanna work here?"
-    content.appendChild(description)
+    backdrop.appendChild(description)
 
     imageChild = document.createElement("img")
     imageChild.id = "big-restaurant-img"
@@ -43,7 +44,7 @@ function createHomepage(content, currentPage) {
     content.appendChild(imageChild)
     
 
-    background = document.createElement("div")
+    let background = document.createElement("div")
     background.classList.add("home-menu-background")
     background.style.cssText = "background-image: url(./img/header_img.jpg); background-size:  cover;background-repeat: no-repeat;background-position: center;"
     content.appendChild(background)

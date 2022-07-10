@@ -9,6 +9,8 @@ function createLocation(content) {
 
     window.scrollTo(0, 0);
 
+    content.style.cssText = ""
+
     let description = document.createElement("p")
     description.classList.add("para")
     description.textContent = "Come find us now! Or we will find you hahah lol... unless"
