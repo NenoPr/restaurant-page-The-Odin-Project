@@ -36,6 +36,12 @@ function createContact(content) {
     description.textContent = "Quantum Tunnel: 688787D8FF144C502C7F5CFFAAFE2CC588D86079F9DE88304C26B0CB99CE91C6"
     content.appendChild(description)
 
+    // create footer portion
+    let footer = document.createElement("div")
+    footer.id = "footer"
+    footer.textContent = "This Restaurant is brought to you by a Project assignment from The Odin Project"
+    content.appendChild(footer)
+
 }
 
 export { createContact }
